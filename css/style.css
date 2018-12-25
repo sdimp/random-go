@@ -1,0 +1,108 @@
+h1{ 
+    font-family: "Optima"; 
+    font-size: 24px; 
+    font-style: normal; 
+    font-variant: normal; font-weight: bold; 
+    line-height: 26px; 
+} 
+
+h2{ 
+    font-family: "Optima"; 
+    font-size: 24px; 
+    font-style: normal; 
+    font-variant: normal; font-weight: bold; 
+    line-height: 26px; 
+} 
+
+
+h3{ 
+    font-family: "Optima"; 
+    font-size: 18px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: bold; 
+    line-height: 16px;
+    padding: 0px;
+} 
+
+p{ 
+    font-family: "Optima"; 
+    font-size: 16px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 20px; 
+    margin-bottom: 1em;
+} 
+
+ul{ 
+    font-family: "Optima"; 
+    font-size: 16px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 20px; 
+    margin-bottom: 8px;
+    margin-top: -8px;
+} 
+
+li{ 
+    font-family: "Optima"; 
+    font-size: 16px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 20px; 
+    margin-bottom: 8px;
+} 
+
+
+
+body{
+    width: available;
+	margin: 2em 2em 2em 2em;
+	padding: 0em;
+    height: available;
+}
+
+.container{
+    width: available;
+    height: available;
+}
+
+.leftpane{
+    width: 25%;
+    min-width: 350px;
+    height: available;
+    min-height: 400px;
+    float: left;
+}
+
+.middlepane{
+   width: 50%;
+   min-width: 800px;
+   height: available;
+   min-height: 650px;
+   float: left;
+   border-collapse: collapse;
+   text-align: center; 
+   margin-left: 1em;
+   margin-right: 1em;
+}
+
+.rightpane{
+    text-align: right;
+    width: available;
+    height: available;
+    position: relative;
+    margin-left: 75%;
+    border-collapse: collapse;
+}
+
+.toppane{
+    width: available;
+    text-align: center;
+    vertical-align: text-bottom;
+    height: 50px;
+    border-collapse: collapse;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Random Go!</title>
+<link rel="stylesheet" href= "/css/style.css" >
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+    
+</head>
+<body>
+
+<!--top-->
+<div class="toppane"><h2>Random Go!</h2></div>
+    
+<!--left-->
+<div class="leftpane">
+
+<h3>What is this?</h3>
+    
+<p>    
+A bare-bones implementation of <a href="https://en.wikipedia.org/wiki/Go_(game)" target="_blank">Go</a> on randomly generated planar graphs. 
+</p>
+
+<!--
+<p>  
+As of now, you will have to play locally (two people on the same device)—I'm working on setting up online multiplayer. 
+</p>
+-->
+    
+<br>
+    
+<h3>What are the rules?</h3>
+
+<p>
+For the most part, the rules are identical to those of Go. 
+</p>
+
+<ul>
+<li>The number of liberties of a stone is equal to the number of unoccupied neighboring vertices.</li>    
+<li>A block of stones is captured when they have zero liberties.</li>
+<li>The <i>ko</i> rule: you are not allowed to make a move that returns the game to the previous position.</li>
+<li>There is no <i>komi</i>.</li>
+<li>We follow Chinese scoring; you can manually select territory in case the scoring is janky.</li>
+</ul>
+
+<!--
+<p>  
+The scoring may be a bit janky, as I'm not sure what the dead shapes on random graphs are. You can, however, manually select territory. 
+</p>
+-->
+    
+</div>
+    
+    
+    
+<!--middle-->    
+<div class="middlepane">
+    
+    
+<svg width="600" height="600" style="background:url('./board.jpg'); background-size: contain" ></svg>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script>
+
+var svg = d3.select("svg"),
+    width = +svg.attr("width"),
+    height = +svg.attr("height");
+
+var sites = d3.range(100)
+    .map(function(d) { return [Math.random() * width, Math.random() * height]; });
+
+var voronoi = d3.voronoi();
+
+document.write(sites)
+    
+</script>
+
+</div>
+    
+<!--right-->    
+<div class="rightpane">
+<p> View on <a href="http://github.com/sdimp" target="_blank">Github</a>.</p>
+    
+<p>
+This is very much an unfinished project. If you have any comments or suggestions, feel free to <a href="mailto:shivnadimpalli@gmail.com" target="_blank">email me</a>. 
+</p>
+    
+<!--
+<script type = "text/javascript"> document.write ( Math.random() );
+</script>    
+-->
+
+</div>
+</body>
+</html> 
+
